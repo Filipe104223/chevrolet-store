@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chevrolet Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+
+            <div class="flex">
+
+                <a href="#"><i class="bi bi-playstation"></i></a>
+
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">HOME</a>
+                            <a href="#">CARROS</a>
+                            <a href="#">MOTOS</a>
+                            <a href="#">CONFIGURAÇÕES</a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div><!--flex-->
+
+        </div><!--container-->
+    </header>
+
+    <section class="hero">
+        <h1>Bem-vindo à Chevrolet Store</h1>
+        <p>Encontre os melhores veículos e serviços para você.</p>
+    </section>
+
+ 
+        <!-- Aqui você pode adicionar informações sobre os veículos em destaque -->
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Chevrolet Store. Todos os direitos reservados.</p>
+    </footer>
+
+    <section class="featured-vehicles">
+      
+    </section>
+    
+
+    <section class="featured-vehicles">
+        <h2>Veículos em destaque</h2>
+        <div class="vehicle-card" onclick="redirect('onix')">
+            <img src="./img/onix-prata.jpg" alt="Chevrolet Onix">
+            <h3>Chevrolet Onix</h3>
+            <p>Descrição do veículo Chevrolet Onix.</p>
+            <div class="vehicle-card">
+                <img src="./img/cruze.jpg" alt="Chevrolet Cruze">
+                <h3>Chevrolet Cruze</h3>
+                <p>Descrição do veículo Chevrolet Cruze.</p>
+            </div>
+            <div class="vehicle-card">
+                <img src="./img/onix-prata.jpg" alt="Chevrolet Onix Plus">
+                <h3>Chevrolet Onix Plus</h3>
+                <p>Descrição do veículo Chevrolet Onix Plus.</p>
+            </div>
+            <div class="vehicle-card">
+                <img src="./img/download.jpg" alt="Chevrolet Cruze Sport 6">
+                <h3>Chevrolet Cruze Sport 6</h3>
+                <p>Descrição do veículo Chevrolet Cruze Sport 6.</p>
+            </div>
+        </div>
+        <!-- Outros veículos aqui -->
+    </section>
+    
+    <section class="choose-options" id="choose-options-onix" style="display: none;">
+        <h2>Escolha a cor do seu carro </h2>
+        <div class="color-options">
+            <input type="radio" id="color-black" name="color" value="black">
+            <label for="color-black">Preto</label><br>
+            <input type="radio" id="color-white" name="color" value="white">
+            <label for="color-white">Branco</label><br>
+            <input type="radio" id="color-white" name="color" value="white">
+            <label for="color-white">Vermelho</label><br>
+            <input type="radio" id="color-white" name="color" value="white">
+            <label for="color-white">Azul</label><br>
+            <input type="radio" id="color-white" name="color" value="white">
+            <label for="color-white">Prata</label><br>
+            <input type="radio" id="color-white" name="color" value="white">
+            <label for="color-white">Vinho</label><br>
+            <!-- Mais opções de cores aqui -->
+        </div>
+        
+        <div id="pagamento">
+        <h2>Opções de pagamento</h2>
+        <select id="payment-options">
+            <option value="credit">Cartão de Crédito</option>
+            <option value="debit">Cartão de Débito</option>
+            <!-- Mais opções de pagamento aqui -->
+        </select>
+        <button onclick="purchase('veiculo foi')">Comprar</button>
+    </section>
+</div>
+    
+
+
+
+
+    <script src="scrpt.js"></script>
+</body>
+</html>
